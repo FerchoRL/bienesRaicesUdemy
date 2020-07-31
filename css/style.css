@@ -1,0 +1,74 @@
+body{
+	/*Install Package menu item. The CSSFontFamily*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Global*/
+img{
+	max-width: 100%;
+}
+
+.contenedor{
+	max-width: 1700px;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+/*Utilidades*/
+.seccion{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+/* Header */
+.site-header-inicio{
+	background-image: url(../img/header.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 600px;
+	/*Flexbox solo afecta el primer nivel de hijos*/
+	display: flex;
+	flex-direction: column;
+	/*Acomoda el contenido*/
+	justify-content: space-between;
+}
+
+.site-header-inicio div h1{
+	color: white;
+	max-width: 700px;
+}
+
+/*Iconos nosotros*/
+
+.encabezado-nosotros{
+	text-align: center;
+	font-weight: 900;
+}
+
+.iconos-nosotros{
+	display: flex;
+	justify-content: space-between;
+}
+
+.icono-hijo{
+	/*Similar al width*/
+	flex-basis: calc(33.3% - 1rem);
+	text-align: center;
+}
+.icono-hijo h3{
+	text-transform: uppercase;
+}
+
+/*Contenedor principal*/
+
+.contenedor-anuncios{
+	display: flex;
+	justify-content: space-between;
+}
+
+.anuncio{
+	/*Similar al width*/
+	flex-basis: calc(33.3% - 1rem);
+	text-align: center;
+}
