@@ -5,8 +5,19 @@ body{
 
 /*Global*/
 img{
+	/*Imagenes responsivas*/
 	max-width: 100%;
 }
+
+a, a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+i{
+	margin: 0.5rem;
+}
+
 
 .contenedor{
 	max-width: 1700px;
@@ -19,6 +30,8 @@ img{
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+
+/*Botones*/
 
 /* Header */
 .site-header-inicio{
@@ -70,5 +83,28 @@ img{
 .anuncio{
 	/*Similar al width*/
 	flex-basis: calc(33.3% - 1rem);
-	text-align: center;
+	text-align: left;
+	/*Instal package control Color Highlighter*/
+	/*Instal package control ColorPicker = ctrl + shift+c*/
+	border: 1px solid #B5B5B5;
+	background: #F5F5F5;
+}
+
+.contenido-anuncio{
+	padding: 2rem;
+}
+
+.contenido-anuncio h3{
+	margin: 0;
+}
+
+.precio{
+	color: #71b100;
+	font-weight: 700;
+}
+
+.btn-ver-todas{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: flex-end;
 }

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta >
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Bienes Raices</title>
@@ -67,8 +68,10 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa de Lujo en el lago</h3>
 					<p>Casa en el lago con excelente vista, acabados de lujo a excelente precio</p>
-					<p>3,000,0000</p>
-					<a href="#">Ver propiedad</a>
+					<p class="precio">3,000,0000</p>
+					<button type="button" class="btn btn-info">
+						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
+					</button>
 				</div>
 			</div>
 
@@ -77,8 +80,10 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa Terminados de Lujo</h3>
 					<p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
-					<p>2,000,0000</p>
-					<a href="#">Ver propiedad</a>
+					<p class="precio">2,000,0000</p>
+					<button type="button" class="btn btn-info">
+						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
+					</button>
 				</div>
 			</div>
 
@@ -87,13 +92,19 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa con Alberca</h3>
 					<p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
-					<p>3,000,0000</p>
-					<a href="#">Ver propiedad</a>
+					<p class="precio">3,000,0000</p>
+					<button type="button" class="btn btn-info">
+						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
+					</button>
 				</div>
 			</div>
 		</div>
 
-		<a href="anuncios.php">Ver todas</a>
+		<div class="btn-ver-todas">
+			<button type="button" class="btn btn-success">
+				<a href="anuncios.php">Ver todas</a>
+			</button>
+		</div>
 
 	</main>
 
