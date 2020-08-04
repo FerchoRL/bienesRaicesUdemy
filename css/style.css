@@ -9,7 +9,7 @@ img{
 	max-width: 100%;
 }
 
-a, a:hover{
+button a, button a:hover{
 	color: white;
 	text-decoration: none;
 }
@@ -21,8 +21,8 @@ i{
 
 .contenedor{
 	max-width: 1700px;
-	margin-left: 6%;
-	margin-right: 6%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 /*Utilidades*/
@@ -78,9 +78,13 @@ i{
 .contenedor-anuncios{
 	display: flex;
 	justify-content: space-between;
+	/*flex items are forced onto one line or can wrap onto multiple lines.*/
+	flex-wrap: wrap;
 }
 
 .anuncio{
+	/*Ayuda a que no se encoja y respete su tamaño original*/
+	flex-shrink: 0;
 	/*Similar al width*/
 	flex-basis: calc(33.3% - 1rem);
 	text-align: left;
@@ -88,6 +92,7 @@ i{
 	/*Instal package control ColorPicker = ctrl + shift+c*/
 	border: 1px solid #B5B5B5;
 	background: #F5F5F5;
+	margin-bottom: 2rem;
 }
 
 .contenido-anuncio{
@@ -96,6 +101,25 @@ i{
 
 .contenido-anuncio h3{
 	margin: 0;
+}
+
+.iconos-anuncio{
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+.iconos-anuncio li{
+	flex: 1;
+	display: flex;
+}
+
+.iconos-anuncio li i{
+	margin-right: 1rem;
+}
+
+.iconos-anuncio li p{
+	margin-top: 1rem;
 }
 
 .precio{
@@ -107,4 +131,122 @@ i{
 	margin-top: 1rem;
 	display: flex;
 	justify-content: flex-end;
+}
+
+/* Contacto Home*/
+
+.imagen-contacto{
+	background-image: url(../img/encuentra.jpg);
+	height: 15rem;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+
+.contenido-contacto{
+	flex: 1;
+	color: white;
+}
+
+.btn-contacto{
+	margin-bottom: 1rem;
+}
+
+/*Seccion Inferior*/
+.seccion-inferior{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.seccion-inferior .blog{
+	flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales{
+	flex-basis: calc(40% - 4rem);
+}
+
+.entrada-blog{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.entrada-blog .imagen-blog{
+	flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada{
+	flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4{
+	font-weight: 700;
+	font-size: 1.7rem;
+}
+
+.texto-entrada p{
+	font-size: 1.2rem;
+}
+
+.texto-entrada a{
+	color: black;
+}
+
+/*Testimoniales*/
+
+.testimonial{
+	background-color: #71B100;
+	padding: 2rem;
+	font-size: 1.2rem;
+	color: white;
+	border-radius: 2rem;
+}
+.testimonial p {
+	text-align: right;
+}
+
+.testimonial blockquote::before{
+	content: url(../img/comilla.svg);
+	width: 2rem;
+	height: 2rem;
+}
+
+.testimonial blockquote{
+	padding-left: 5rem;
+}
+
+/*Footer*/
+.copyright{
+	color: white;
+}
+
+/* INTERNAS */
+
+/* Main Nosotros.php */
+.contenido-nosotros{
+	display: grid;
+	/*Indicar cuantas columas y que tamaño le damos a nuestras columnas*/
+	grid-template-columns: repeat(2, 1fr);
+	/*Indicar con cuanto separamos las columnas*/
+	grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote{
+	font-weight: 900;
+	font-size: 1.5rem;
+	padding: 3rem 0;
+}
+
+/* Anuncio */
+
+.resumen-propiedad{
+	display: flex;
+	justify-content: space-between;
+}
+
+.resumen-propiedad ul li{
+	margin-right: 3rem;
 }

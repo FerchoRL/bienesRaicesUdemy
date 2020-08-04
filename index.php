@@ -68,10 +68,22 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa de Lujo en el lago</h3>
 					<p>Casa en el lago con excelente vista, acabados de lujo a excelente precio</p>
-					<p class="precio">3,000,0000</p>
-					<button type="button" class="btn btn-info">
-						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
-					</button>
+					<ul class="iconos-anuncio">
+						<li>
+							<i class="fas fa-toilet fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-car fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-bed fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+					</ul>
+					<p class="precio">$3,000,0000</p>
+					<a href="anuncio.php" class="btn btn-info" role="button" aria-pressed="true">Ver propiedad<i class="far fa-file-alt"></i></a>
 				</div>
 			</div>
 
@@ -80,10 +92,22 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa Terminados de Lujo</h3>
 					<p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
-					<p class="precio">2,000,0000</p>
-					<button type="button" class="btn btn-info">
-						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
-					</button>
+					<ul class="iconos-anuncio">
+						<li>
+							<i class="fas fa-toilet fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-car fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-bed fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+					</ul>
+					<p class="precio">$2,000,0000</p>
+					<a href="anuncio.php" class="btn btn-info" role="button" aria-pressed="true">Ver propiedad<i class="far fa-file-alt"></i></a>
 				</div>
 			</div>
 
@@ -92,57 +116,84 @@ comm-html-section + tab = insert comment section
 				<div class="contenido-anuncio">
 					<h3>Casa con Alberca</h3>
 					<p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
-					<p class="precio">3,000,0000</p>
-					<button type="button" class="btn btn-info">
-						<a href="#">Ver propiedad<i class="far fa-file-alt"></i></a>
-					</button>
+					<ul class="iconos-anuncio">
+						<li>
+							<i class="fas fa-toilet fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-car fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+						<li>
+							<i class="fas fa-bed fa-3x" alt="icono wc"></i>
+							<p>3</p>
+						</li>
+					</ul>
+					<p class="precio">$3,000,0000</p>
+					<a href="anuncio.php" class="btn btn-info" role="button" aria-pressed="true">Ver propiedad<i class="far fa-file-alt"></i></a>
 				</div>
 			</div>
 		</div>
 
 		<div class="btn-ver-todas">
-			<button type="button" class="btn btn-success">
-				<a href="anuncios.php">Ver todas</a>
-			</button>
+			<a href="anuncios.php" class="btn btn-success" role="button" aria-pressed="true">Ver todas<i class="far fa-file-alt"></i></a>
 		</div>
 
 	</main>
 
-	<section>
-		<h2>Encuentra la casa de tus sueños</h2>
-		<p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
-		<a href="contacto.php">Contactanos</a>
+	<section class="imagen-contacto">
+		<div class="contenedor contenido-contacto">
+			<h2>Encuentra la casa de tus sueños</h2>
+			<p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
+			<a href="contacto.php" class="btn btn-info btn-contacto" role="button" aria-pressed="true">Contactanos<i class="far fa-id-badge fa-lg"></i></a>
+		</div>
 	</section>
 
 	<!-- Nuestro blog section -->
-	<section>
-		<h3>Nuestro Blog</h3>
-		<!-- Use article when have a section like a blog -->
-		
-		<article>
-			<img src="img/blog1.jpg" alt="Imagen blog terraza">
-			<h4>Terraza en el techo de tu casa</h4>
-			<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>
-			<p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
-		</article>
+	<div class="seccion-inferior contenedor">
+		<section class="blog">
+			<h3>Nuestro Blog</h3>
+			<!-- Use article when have a section like a blog -->
+			
+			<article class="entrada-blog">
+				<div class="imagen-blog">
+					<img src="img/blog1.jpg" alt="Imagen blog terraza">
+				</div>
+				<div class="texto-entrada">
+					<a href="#">
+						<h4>Terraza en el techo de tu casa</h4>
+					</a>
+					<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>
+					<p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
+				</div>
+			</article>
 
-		<article>
-			<img src="img/blog2.jpg" alt="Imagen blog decoracion">
-			<h4>Guia para la decoracion de tu hogar</h4>
-			<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>
-			<p>Maximiza el espacio en tu hogar con este guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
-		</article>
+			<article class="entrada-blog">
+				<div class="imagen-blog">
+					<img src="img/blog2.jpg" alt="Imagen blog decoracion">
+				</div>
+				<div class="texto-entrada">
+					<a href="#">
+						<h4>Guia para la decoracion de tu hogar</h4>
+					</a>
+					<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>
+					<p>Maximiza el espacio en tu hogar con este guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
+				</div>
+			</article>
 
-	</section>
+		</section>
 
-	<section>
-		<h3>Testimoniales</h3>
-		<!-- blockquote funciona para los testimoniales -->
-		
-		<blockquote>El personal se comporto de una excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas mis expectativas</blockquote>
+		<section class="testimoniales contenedor">
+			<h3 class="text-center">Testimoniales</h3>
+			<!-- blockquote funciona para los testimoniales -->
+			<div class="testimonial">
+				<blockquote>El personal se comporto de una excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas mis expectativas</blockquote>
 
-		<p>Fernando Ramila</p>
-	</section>
+				<p>Fernando Ramila</p>
+			</div>
+		</section>
+	</div>
 
 	<!-- Footer -->
 	<?php include 'navbarFooter.php'; ?>
