@@ -161,7 +161,7 @@ comm-html-section + tab = insert comment section
 					<img src="img/blog1.jpg" alt="Imagen blog terraza">
 				</div>
 				<div class="texto-entrada">
-					<a href="#">
+					<a href="entrada.php">
 						<h4>Terraza en el techo de tu casa</h4>
 					</a>
 					<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>
@@ -174,7 +174,7 @@ comm-html-section + tab = insert comment section
 					<img src="img/blog2.jpg" alt="Imagen blog decoracion">
 				</div>
 				<div class="texto-entrada">
-					<a href="#">
+					<a href="entrada.php">
 						<h4>Guia para la decoracion de tu hogar</h4>
 					</a>
 					<p>Escrito el: <em>7/20/2020</em> por: <em>Admin</em></p>

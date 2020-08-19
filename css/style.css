@@ -18,11 +18,19 @@ i{
 	margin: 0.5rem;
 }
 
+form{
+  width: 50%;
+  margin: auto;
+}
+
+.form-group, .form-check{
+	margin-bottom: 1rem;
+}
 
 .contenedor{
 	max-width: 1700px;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 /*Utilidades*/
@@ -249,4 +257,11 @@ i{
 
 .resumen-propiedad ul li{
 	margin-right: 3rem;
+}
+
+/*Contacto*/
+
+.form-check-contacto{
+	display: flex;
+	justify-content: space-around;
 }
